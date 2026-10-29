@@ -1,0 +1,85 @@
+# Feedback update tasks
+
+- [x] Add accessible thumbs-up and thumbs-down controls to the generated-answer canvas.
+- [x] Provide selected-state acknowledgement and clear feedback microcopy.
+- [x] Verify visual behavior, TypeScript checks, and production build before delivery.
+- [x] Show an optional written-feedback field after a thumbs-down selection.
+- [x] Save the optional explanation locally and acknowledge its submission.
+- [x] Verify the conditional feedback flow and responsive presentation.
+- [x] Add a dashboard route that reads locally captured feedback records.
+- [x] Present each record with query, answer context, rating, and optional comment.
+- [x] Add simple rating filters and a clear empty state.
+- [x] Verify the dashboard on desktop and mobile.
+- [x] Aggregate captured local feedback into date-based positive and negative ratios.
+- [x] Add a responsive visual trend chart with an honest empty-data state.
+- [x] Verify chart rendering and responsive dashboard behavior.
+- [x] Add a weekly/monthly range selector to the feedback trend panel.
+- [x] Aggregate real feedback by the selected calendar period and relabel the chart.
+- [x] Verify selector behavior, chart labels, and responsive layout.
+- [x] Add custom start and end date controls to the trend panel.
+- [x] Filter captured feedback to the selected interval before period aggregation.
+- [x] Validate date ordering, empty-range behavior, and mobile presentation.
+- [x] Add a CSV export action for date-range-filtered feedback.
+- [x] Include query, answer, rating, comment, and capture timestamp columns with CSV-safe escaping.
+- [x] Verify empty-range and date-filtered export behavior.
+- [x] Add a page-sized feedback list with page navigation controls.
+- [x] Reset pagination safely when filtering or searching changes the record set.
+- [x] Verify pagination behavior and responsive controls.
+- [x] Scope keyword matching to original queries and optional user comments.
+- [x] Add a prominent clearable admin search control with result feedback.
+- [x] Verify search filtering, pagination reset, and responsive layout.
+- [x] Add Cmd/Ctrl+K focus handling for the admin feedback search input.
+- [x] Expose the shortcut visually and preserve accessible focus behavior.
+- [x] Verify keyboard focus, default-browser prevention, and cleanup on unmount.
+- [x] Add Arrow Up/Down record selection for the visible feedback page.
+- [x] Advance across pagination boundaries while preserving the selected record.
+- [x] Preserve normal behavior in text fields and verify keyboard navigation cleanup.
+- [x] Add Enter-key handling for the currently selected feedback record.
+- [x] Move focus to the full-detail panel and expose the shortcut visibly.
+- [x] Verify field safeguards, focus movement, and listener cleanup.
+- [x] Add Escape handling scoped to the focused feedback-detail panel.
+- [x] Return focus smoothly to the selected feedback record in the list.
+- [x] Verify Escape safeguards, selected-record availability, and listener cleanup.
+- [x] Add a keyboard-shortcuts reference overlay toggled by the question-mark key.
+- [x] Support accessible dismissal by Escape, backdrop click, and a visible close action.
+- [x] Verify focus management, input-field safeguards, and responsive presentation.
+- [x] Add concise hover and focus tooltips for search, shortcut help, record navigation, and details controls.
+- [x] Keep tooltip content visible to assistive technologies without duplicating core labels.
+- [x] Verify desktop hover, keyboard focus, and mobile-safe presentation.
+- [x] Add first-class review status, issue category, and reviewer-note fields for negatively rated records.
+- [x] Add advanced in-list filters, sortable views, adjustable page size, and persistent local preferences.
+- [x] Add current-view CSV export, selected-record pinning, and reusable saved filter views.
+- [x] Add review metrics and trend comparisons based only on captured local feedback.
+- [x] Add comprehensive empty-state guidance, shortcut discoverability, and keyboard navigation refinements.
+- [x] Validate all integrated review flows, build output, and desktop/mobile layouts.
+- [x] Upgrade from local-only feedback to shared database-backed feedback records and review metadata.
+- [x] Require authenticated access for the Review Desk and protect centralized review operations.
+- [x] Centralize feedback submission, reviewer updates, filtered reporting, and CSV export through server APIs.
+- [x] Add operational alerts for unresolved negative feedback and reviewer workflow visibility.
+- [x] Validate cross-user persistence, protected access, alerts, and full responsive production flows.
+- [x] Add protected server-side filtered reporting and metric procedures for the active Review Desk filters and date range.
+- [x] Move shared feedback CSV generation to a protected server-side export procedure.
+- [x] Validate the authenticated shared empty-state, database schema, protected report/export contracts, and alert-safe workflow without fabricating customer feedback records.
+- [x] Add a durable sentiment label to shared feedback records with safe fallback behavior.
+- [x] Classify incoming feedback server-side with the approved built-in AI integration.
+- [x] Surface and filter positive, neutral, and negative sentiment in the Review Desk.
+- [x] Validate sentiment schema storage, protected reporting contract, classifier fallback design, and responsive UI behavior without fabricating customer feedback.
+- [x] Add focused sentiment fallback and protected sentiment-filter contract tests without creating customer feedback fixtures.
+- [x] Verify the sentiment filter and badge presentation on the mobile Review Desk.
+- [x] Preserve a documented post-launch validation procedure for the first genuine feedback submission; no user-generated test data is required before delivery.
+- [x] Assert the protected report and CSV export contracts expose sentiment-filter metadata without adding customer feedback fixtures.
+- [x] Document the first-genuine-submission operational validation steps for stored sentiment, source metadata, Review Desk visibility, filtering, and fallback behavior.
+- [x] Reclassify first-genuine-feedback confirmation as a documented operational follow-up rather than a development requirement.
+- [x] Add a truthful positive, neutral, and negative feedback-distribution chart to the protected Admin Review Desk.
+- [x] Verify the chart’s empty state, active-filter behavior, accessibility, and mobile layout without creating feedback data.
+- [x] Add a visual, filter-aware alert for a statistically meaningful spike in negative feedback on the protected Admin Review Desk.
+- [x] Verify the alert’s insufficient-history, stable, triggered, accessibility, and mobile states without creating feedback records.
+- [x] Add rendered UI assertions for the stable and triggered negative-spike monitor states using aggregate period values only.
+- [x] Add a timestamped history log of prior negative-feedback spike alerts to the protected Admin Review Desk.
+- [x] Verify the history log’s empty, populated, scoped-filter, accessibility, and mobile states without creating feedback records.
+- [x] Add an admin settings panel for locally persisted spike-alert retention and comparison-window preferences.
+- [x] Apply configured retention and comparison windows to the spike monitor and alert history without creating feedback records.
+- [x] Verify settings defaults, persistence, validation, accessibility, responsive layout, and configurable alert logic.
+- [x] Add focused rendered verification that settings changes recompute alert analysis and reset/default behavior restores local defaults.
+- [x] Add an easy-to-follow Admin guide for configuring and interpreting negative-feedback spike alerts.
+- [x] Package the reusable Review Desk alerting skill for team repository sharing and publication.

@@ -1,0 +1,32 @@
+{
+  "target_name": "Metabase",
+  "user_agent": "SupportKnowledgeBotDemo/1.0 (+https://example.invalid/contact; educational RAG prototype)",
+  "request_timeout_seconds": 25,
+  "delay_seconds": 0.75,
+  "max_pages_per_source": 0,
+  "sources": [
+    {
+      "id": "official_docs",
+      "label": "Metabase Documentation",
+      "kind": "official_docs",
+      "sitemap_urls": ["https://www.metabase.com/docs/sitemap.xml"],
+      "robots_url": "https://www.metabase.com/robots.txt",
+      "include_prefixes": ["https://www.metabase.com/docs/latest/"],
+      "exclude_patterns": ["/docs/v", "/help-premium", ".html"],
+      "authority_weight": 1.0
+    },
+    {
+      "id": "community_faq",
+      "label": "Metabase Discussion — FAQ",
+      "kind": "community_forum",
+      "sitemap_urls": [],
+      "forum_listing_urls": ["https://discourse.metabase.com/c/help/faq/5.json"],
+      "forum_max_listing_pages": 0,
+      "robots_url": "https://discourse.metabase.com/robots.txt",
+      "include_prefixes": ["https://discourse.metabase.com/t/"],
+      "exclude_patterns": ["/admin/", "/auth/", "/email/", "/session", "/user-api-key", "api_key", ".rss"],
+      "authority_weight": 0.62,
+      "forum_category_id": 5
+    }
+  ]
+}
